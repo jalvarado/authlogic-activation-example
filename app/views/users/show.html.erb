@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+	<b>Active:</b>
+	<%= @user.active %>
+</p>
+
+<p>
+	<b>Password Set:</b>
+	<%= !@user.crypted_password.blank? %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @user.name %>
+</p>
+
+<p>
+  <b>Address line 1:</b>
+  <%= @user.address_line_1 %>
+</p>
+
+<p>
+  <b>Address line 2:</b>
+  <%= @user.address_line_2 %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @user.city %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @user.state %>
+</p>
+
+<p>
+  <b>Zipcode:</b>
+  <%= @user.zipcode %>
+</p>
+
+<p>
+  <b>Phone number:</b>
+  <%= @user.phone_number %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

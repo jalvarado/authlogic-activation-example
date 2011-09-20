@@ -1,0 +1,13 @@
+<%= form_for @user, :url => activation_path(@user.id) do |f| %>
+	<p>
+		<%= f.label :password %><br/>
+		<%= f.password_field :password %>
+	</p>
+	<p>
+		<%= f.label :password_confirmation %><br/>
+		<%= f.password_field :password_confirmation %>
+	</p>
+	<p>
+		<%= f.submit "Activate" %>
+	</p>
+<% end -%>
